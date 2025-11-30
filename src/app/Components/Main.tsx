@@ -2,10 +2,10 @@
 "use client"
 export default function Main({ name, count, images }) {
     return (
-        <div >
-            <div className="h-[130px]  bg-black flex justify-around items-center  p-4 ">
+        <div className="flex h-full justify-center items-center" >
+            <div className="h-[120px] w-[540px] bg-black flex justify-around items-center  p-4 ">
 
-                <div className="flex  gap-10">
+                <div className="flex  gap-8">
 
                     <div className="flex flex-wrap w-[76px]">
                         {
