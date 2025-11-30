@@ -3,11 +3,11 @@
 export default function Main({ name, count, images }) {
     return (
         <div >
-            <div className="h-[120px]  bg-black flex justify-around items-center  p-4 ">
+            <div className="h-[130px]  bg-black flex justify-around items-center  p-4 ">
 
                 <div className="flex  gap-10">
 
-                    <div className="flex">
+                    <div className="flex flex-wrap w-[76px]">
                         {
                             images.map((image, index) => (
                                 image.ready === "true" ?
@@ -15,7 +15,7 @@ export default function Main({ name, count, images }) {
                                     :
 
                                     <img key={index} className="w-[38px] h-[38px] border border-black rounded-full" src="https://static.vecteezy.com/system/resources/thumbnails/072/682/301/small_2x/error-warning-triangle-animation-on-black-background-free-video.jpg" alt="Profile" />
-                            )
+                                )
                             )
                         }
                     </div>
