@@ -22,4 +22,6 @@ const images =
     },
 
 ]
-export default images
+export async function GET() {
+    return new Response(JSON.stringify(images));
+}
